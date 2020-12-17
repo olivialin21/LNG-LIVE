@@ -56,15 +56,20 @@ html{
 
 /* article */
 .article{
-    margin:50px 20%;
+    width:100%;
+    max-width:1280px;
+    margin:50px auto;
 }
 
 .context{
-    width:100%;
+    width:90%;
     background-color: #D3F5F0;
     border-radius: 30px;
-    margin-top:20px;
     padding:30px;
+}
+
+@media (max-width:1200px){
+
 }
 
 .context_icon{
@@ -78,13 +83,10 @@ html{
 }
 
 .context_ig{
-    width:60%;
     padding:0;
 }
 
 .context_fb{
-    width:40%;
-    height:700px;
     padding:0;
     display:flex;
     flex-direction: column;
