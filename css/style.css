@@ -24,6 +24,7 @@ header{
 
 /* logo */
 .logo{
+    padding-top:5px!important;
     display: flex;
     align-items: center;
 }
@@ -75,12 +76,15 @@ header{
  }
 
 .nav-item a,a:link,a:visited{
-    
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    font-size: 18px;
     text-decoration:none;
     transition: background-color 0.2s,color 0.2s;
     color:#20554C;
     background-color: transparent;
     border-radius: 30px;
+    padding-top:11px;
 }
 
 .nav-item a:hover{
@@ -120,14 +124,6 @@ picture{
     margin:50px auto
 }
 
-.context{
-    width:90%;
-    background-color: #D3F5F0;
-    border-radius: 30px;
-    padding:30px;
-    margin:0 auto;
-}
-
 @media (max-width:992px){
     .article{
         width:100%;
@@ -136,31 +132,47 @@ picture{
     }
 }
 
-.context_icon{
+.content{
+    width:90%;
+    background-color: #D3F5F0;
+    border-radius: 30px;
+    padding:30px;
+    margin:0 auto;
+}
+
+/* content_common */
+.title_flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:0 0 15px 0;
+}
+
+.content_icon{
     width:40px;
     height:40px;
 }
 
-.context_title{
+.content_title{
+    margin: 0 0 0 15px;
     font-family: "Roboto",sans-serif;
-    font-weight: 300;
+    font-weight: 400;
+    font-size:18px;
+    color:#20554C;
 }
 
-.context_ig{
+/* content_box */
+.content_ig{
     padding:0;
 }
 
-.instagram-media{
-    width:100%;
-}
-
-.context_fb{
+.content_fb{
     padding:0;
     display:flex;
     flex-direction: column;
 }
 
-.context_twitch{
+.content_twitch{
     width:90%;
     border-radius: 30px;
     padding:30px;
@@ -172,16 +184,27 @@ picture{
     margin-top:20px;
 }
 
+/* content_detal */
 .fb_post{
     border-radius: 30px;
 }
 
 /* footer */
 .footer{
-    position:relative;
+    position: relative;
     display: inline-flex;
-    width: 100%;
+    width:100%;
+    max-width: 1280px;
+    margin:0 auto;
     background-color: #8CC2BA;
+    padding:10px 0;
+}
+
+.footer p{
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    font-size:12px;
+    color:#FFFFFF;
 }
 
 /* hamburger */
