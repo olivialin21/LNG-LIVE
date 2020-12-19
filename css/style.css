@@ -243,6 +243,9 @@ picture{
 
 @media(max-width:576px){
     .footer_in{
+        width:100%;
+        margin:20px auto;
+        padding:0;
         display: inline-flex;
         flex-direction: column-reverse;
     }
