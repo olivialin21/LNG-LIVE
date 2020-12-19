@@ -191,20 +191,65 @@ picture{
 
 /* footer */
 .footer{
-    position: relative;
-    display: inline-flex;
     width:100%;
-    max-width: 1280px;
-    margin:0 auto;
     background-color: #8CC2BA;
-    padding:10px 0;
+}
+
+.footer_in{
+    width:90%;
+    max-width: 1280px;
+    margin:20px auto;
+    padding:0;
+}
+
+@media(max-width:576px){
+    .footer_in{
+        display: inline-flex;
+        flex-direction: column-reverse;
+    }
 }
 
 .footer p{
     font-family: "Roboto",sans-serif;
     font-weight: 400;
     font-size:12px;
+    line-height:12px;
     color:#FFFFFF;
+    margin:0;
+}
+
+@media(max-width:576px){
+    .footer p{
+        font-family: "Roboto",sans-serif;
+        font-weight: 400;
+        font-size:12px;
+        line-height:12px;
+        color:#FFFFFF;
+        margin:0;
+        display: inline-flex;
+        justify-content: center;
+    }
+}
+
+.footer_icn{
+    margin:0 0 0 10px;
+}
+
+.footer a{
+    padding:0;
+}
+
+.footer_icn_align{
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+@media(max-width:576px){
+    .footer_icn_align{
+        margin-bottom:10px;
+        display: inline-flex;
+        justify-content: center;
+    }
 }
 
 /* hamburger */
