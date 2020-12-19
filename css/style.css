@@ -172,7 +172,7 @@ picture{
     flex-direction: column;
 }
 
-.content_twitch{
+/* .content_twitch{
     width:90%;
     border-radius: 30px;
     padding:30px;
@@ -182,11 +182,12 @@ picture{
     justify-content: center;
     align-items: center;
     margin-top:20px;
-}
+} */
 
 /* content_detal */
 .fb_post{
     border-radius: 30px;
+    margin-bottom:30px;
 }
 
 /* footer */
